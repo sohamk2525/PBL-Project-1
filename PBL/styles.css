@@ -1,0 +1,171 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+position: absolute;
+top: 2px;
+width: 5px;
+height: auto;
+}
+
+.logo.right {
+right: 5px;
+}
+
+.logo.left {
+left: 5px;
+}
+
+.company-name {
+    font-weight: bold;
+flex-grow: 1;
+color:#0000FF;
+}
+
+.tagline {
+    font-size: 20px;
+color:#FFBF00;
+}
+
+/* Horizontal Lines */
+.line1 {
+    border-top: 2px;
+background-color:#0000FF;
+}
+
+.line2 {
+    border-top: 1px;
+background-color:#FFBF00;
+    margin-top: 5px;
+}
+
+/* Menu Styles */
+nav {
+    background-color: #FFBF00;
+border: 1px;
+border-color: #ffffff;
+border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffbf00;
+}
+
+nav ul li:hover ul {
+border: 1px;
+border-color: #ffffff;
+border-radius: 5px;
+    display: block;
+}
+
+nav ul li ul li {
+border: 1px;
+border-color: #ffffff;
+border-radius: 5px;
+    width: 200px;
+}
+
+nav ul li ul li a {
+border: 1px;
+border-color: #ffffff;
+border-radius: 5px;
+    padding: 10px 15px;
+}
+
+/* Content Styles */
+main {
+    padding: 20px;
+display: flex;
+justify-content: center;
+height: 100vh;
+}
+
+.content {
+    text-align: center;
+background-color: #00BFE6;
+padding: 20px
+border-radius: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+max-width: 800px;
+overflow: auto;
+
+}
+
+.content p {
+    margin-bottom: 20px;
+font-family: 'Arial',sans-serif;
+font-size: 18px;
+line-height: 1.6;
+text-align: justify;
+
+}
+
+.content img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+}
+*,
+*::before,
+*::after{
+box-sizing: border-box;
+}
+/* Footer Styles */
+footer {
+    background-color: #333; /* Customize footer background color */
+    color: #fff; /* Customize footer text color */
+    padding: 20px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer p {
+    margin-top: 10px;
+    text-align: center;
+}
